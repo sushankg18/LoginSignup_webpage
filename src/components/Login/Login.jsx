@@ -10,9 +10,6 @@ const Login = () => {
 
     const handleLogin = (e) =>{
         e.preventDefault()
-        console.log(username)
-        console.log(email)
-        console.log(password)
     }
     return (
         <div className='login-div'>
