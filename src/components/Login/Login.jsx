@@ -22,10 +22,12 @@ const Login = () => {
         );
 
         if (matchedUser) {
-            alert('Login successful!');
+            alert('Login successful');
             window.location.href = '/home'
-        } else {
-            alert('Invalid username/email or password');
+        } else { 
+           alert('Invalid username or email or password');
+           setUsername(null)
+           setPassword(null)
         }
     };
 
@@ -39,6 +41,7 @@ const Login = () => {
                     <div>
                         <label>Enter Username/Email</label>
                         <input
+                            className='login-input'
                             type='text'
                             placeholder='Enter Username or Email'
                             onChange={(e) => setUsername(e.target.value)}
@@ -46,9 +49,9 @@ const Login = () => {
                     </div>
                     <div>
                         <label>Enter Password</label>
-                        <input type='password' placeholder='Enter Password' onChange={(e) => setPassword(e.target.value)} />
+                        <input className='login-input' type='password' placeholder='Enter Password' onChange={(e) => setPassword(e.target.value)} />
                     </div>
-                    <button type='submit' onClick={handleLogin}>
+                    <button className='login-btn' type='submit' onClick={handleLogin}>
                         Login
                     </button>
                 </form>

@@ -4,13 +4,11 @@ import img from './Signup.jpg';
 import '../Signup/Signup.css';
 
 const Signup = () => {
-    // State to store form data
     const [fullName, setFullName] = useState('');
     const [username, setUsername] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
-    // Function to handle form submission
     const handleSignup = (e) => {
         e.preventDefault();
 
@@ -49,19 +47,19 @@ const Signup = () => {
                 <div className='form-details'>
                     <div>
                         <label>Full Name</label>
-                        <input type='text' placeholder='Enter Full Name' onChange={(e) => setFullName(e.target.value)} />
+                        <input className='signup-input' type='text' placeholder='Enter Full Name' onChange={(e) => setFullName(e.target.value)} />
                     </div>
                     <div>
                         <label>Enter Username</label>
-                        <input type='text' placeholder='Enter Username' onChange={(e) => setUsername(e.target.value)} />
+                        <input className='signup-input' type='text' placeholder='Enter Username' onChange={(e) => setUsername(e.target.value)} />
                     </div>
                     <div>
                         <label>Enter Email</label>
-                        <input type='email' placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} />
+                        <input className='signup-input' type='email' placeholder='Enter Email' onChange={(e) => setEmail(e.target.value)} />
                     </div>
                     <div>
                         <label>Enter Password</label>
-                        <input type='password' placeholder='Enter Password' onChange={(e) => setPassword(e.target.value)} />
+                        <input className='signup-input' type='password' placeholder='Enter Password' onChange={(e) => setPassword(e.target.value)} />
                     </div>
                     <button className='signup-btn' type='submit' onClick={handleSignup}>
                         Sign up

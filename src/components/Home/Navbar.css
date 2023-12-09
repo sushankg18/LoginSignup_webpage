@@ -1,0 +1,81 @@
+.navbar-container {
+    width: 100%;
+    background-color: #EFEFEF;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+    align-items: center;
+    box-shadow: 0px 0px 7px #000;
+}
+
+.logo {
+    width: 12rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+.logo img {
+    width: 100%;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 0.3rem;
+    overflow: hidden;
+    height: 2rem;
+}
+
+.search-bar>input {
+    flex: 1;
+    width: 30rem;
+    padding: .2rem 1rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    height: 100%;
+}
+
+.search-bar .icon {
+    color: white;
+    font-size: 1.5rem;
+    width: 2.5rem;
+    cursor: pointer;
+    background-color: #5A49E3;
+    padding: 0.3rem;
+    height: 100%;
+}
+
+.nav-right {
+    display: flex;
+    gap: 2rem;
+}
+
+.cart-div {
+    display: flex;
+    cursor: pointer;
+    color: #000;
+    font-size: 1.2rem;
+    align-items: center;
+    gap: .4rem;
+}
+
+
+
+
+.Logout-btn {
+    background-color: #5A49E3;
+    font-weight: 600;
+    border-radius: .5rem;
+    color: white;
+    border: none;
+    padding: .4rem 1rem;
+    cursor: pointer;
+    transition: .2s all ease-in-out;
+}
+
+.Logout-btn:hover{
+    color: #5A49E3;
+    background-color: white;
+    border: 1px solid black;
+}
