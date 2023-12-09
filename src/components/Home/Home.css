@@ -10,7 +10,7 @@
 
 .home-main {
     width: 100%;
-    max-width: 1200px;
+    max-width: 80%;
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +21,7 @@
 }
 
 .item-card {
-    width: calc(25% - 1rem);
+    width: 23%;
     height: fit-content;
     padding: 0.6rem;
     display: flex;
@@ -93,7 +93,7 @@ h4 {
     cursor:context-menu;
 }
 .cart{
-    background-color: #5A49E3;
+    background-color: #332b6a;
     color: white;
     font-weight: bold;
     border: none;

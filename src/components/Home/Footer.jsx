@@ -3,6 +3,7 @@ import { PiBagSimpleFill } from "react-icons/pi";
 import {  FaGift } from "react-icons/fa6";
 import { RiAdvertisementFill } from "react-icons/ri";
 import { MdHelpCenter } from "react-icons/md";
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -10,39 +11,39 @@ const Footer = () => {
             <div className="footer-upper">
                 <div>
                     <h4 className="heading">About</h4>
-                    <p>Contact Us</p>
-                    <p>About Us</p>
-                    <p>Carriers</p>
-                    <p>Press</p>
-                    <p>Cleartrip</p>
-                    <p>Corporate Information</p>
+                    <p><Link to={'/home'}>Contact Us</Link></p>
+                    <p><Link to={'/home'}>About Us</Link></p>
+                    <p><Link to={'/home'}>Carriers</Link></p>
+                    <p><Link to={'/home'}>Press</Link></p>
+                    <p><Link to={'/home'}>Cleartrip</Link></p>
+                    <p><Link to={'/home'}>Corporate Information</Link></p>
                 </div>
 
                 <div>
                     <h4 className="heading">Help</h4>
-                    <p>Payments</p>
-                    <p>Shippings</p>
-                    <p>Cancellation and Returns</p>
-                    <p>FAQ</p>
-                    <p>Report Infringement</p>
+                    <p><Link to={'/home'}>Payments</Link></p>
+                    <p><Link to={'/home'}>Shippings</Link></p>
+                    <p><Link to={'/home'}>Cancellation and Returns</Link></p>
+                    <p><Link to={'/home'}>FAQ</Link></p>
+                    <p><Link to={'/home'}>Report Information</Link></p>
                 </div>
 
                 <div>
                     <h4 className="heading">Consukmer Policy</h4>
-                    <p>Canellation and Returns</p>
-                    <p>Terms of Use</p>
-                    <p>Security</p>
-                    <p>Privacy</p>
-                    <p>Sitemap</p>
-                    <p>Grievance</p>
+                    <p><Link to={'/home'}>Cancellation and Returns</Link></p>
+                    <p><Link to={'/home'}>Terms of Use</Link></p>
+                    <p><Link to={'/home'}>Security</Link></p>
+                    <p><Link to={'/home'}>Privacy</Link></p>
+                    <p><Link to={'/home'}>Sitemap</Link></p>
+                    <p><Link to={'/home'}>Grievance</Link></p>
                 </div>
 
                 <div>
                     <h4 className="heading">Social</h4>
-                    <p>Facebook</p>
-                    <p>Twitter</p>
-                    <p>Youtube</p>
-                    <p>Instagram</p>
+                    <p><Link to={'/home'}>Facebook</Link></p>
+                    <p><Link to={'/home'}>Twitter</Link></p>
+                    <p><Link to={'/home'}>Youtube</Link></p>
+                    <p><Link to={'/home'}>Instagram</Link></p>
                 </div>
 
             </div>
