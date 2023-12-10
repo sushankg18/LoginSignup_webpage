@@ -3,27 +3,22 @@ import '../Home/Home.css';
 import Navbar from './Navbar';
 import { data } from '../../data';
 import Footer from './Footer';
-import { FaStar,FaHeart } from "react-icons/fa";
+import { FaStar, FaHeart } from 'react-icons/fa';
 
 const Home = () => {
-  let [cart , setCart] = useState(0)
-
+  const [cart, setCart] = useState(0);
   const handleCart = () => {
-    setCart((prevCart) => {
-      console.log(prevCart + 1);
-      return prevCart + 1;
-    });
+    setCart((prevCart) => prevCart + 1);
   };
-  
   return (
-    <div className='Home-container'>
-      <Navbar />
+    <div className='home-container'>
+      <Navbar cartCount={cart} />
       <div className='home-main'>
         {data.map((item, index) => (
           <div key={index} className='item-card'>
             <div className='card-img'>
               <img src={item.img} alt={item.name} />
-              <FaHeart className='Heart-icon' />
+              <FaHeart className='heart-icon' />
             </div>
             <div className='item-details'>
               <p>{item.name}</p>

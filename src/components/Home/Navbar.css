@@ -16,6 +16,7 @@
 
 .logo img {
     width: 100%;
+    user-select: none;
 }
 
 .search-bar {
@@ -60,10 +61,7 @@
     gap: .4rem;
 }
 
-
-
-
-.Logout-btn {
+.logout-btn {
     background-color: #5A49E3;
     font-weight: 600;
     border-radius: .5rem;
