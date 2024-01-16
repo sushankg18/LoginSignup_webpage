@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './Shopinger-logos-removebg-preview.png';
+import logo from './shopingerLogo.png';
 import '../Home/Navbar.css';
 import { IoMdSearch } from 'react-icons/io';
 import { HiOutlineShoppingCart } from 'react-icons/hi';
