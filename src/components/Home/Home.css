@@ -7,9 +7,15 @@
     gap: 1.2rem;
     overflow-x: hidden;
 }
-
-.home-main {
-    width: 100%;
+.home-main{
+    display: flex;
+}
+.home-left{
+    width: 20%;
+    height: 70vh;
+}
+.home-right {
+    width: 80%;
     max-width: 80%;
     margin: 0 auto;
     display: flex;
